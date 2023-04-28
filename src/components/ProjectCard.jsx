@@ -4,7 +4,7 @@ import Project from '.././assets/software.png'
 
 const ProjectCard = ({ name, description, photo, demo, github, stack }) => {
   return (
-    <div className='max-w-[40%] min-w-[40%] h-[70%] border-2 border-black flex gap-4 flex-col'>
+    <div className='border-2 md:w-[36rem] sm:w-[20rem] border-black flex gap-4 flex-col'>
         <img src={photo} alt={name} className='' />
         <h1 className="font-black text-2xl">{name}</h1>
         <h1 className="font-md text-lg border-2 border-black border-x-transparent p-4">{stack}</h1>

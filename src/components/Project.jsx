@@ -44,19 +44,20 @@ const Project = () => {
   ]
 
   return (
-    <section id="projects">
-      <h1>Projects</h1>
-      <div className="flex flex-wrap justify-center items-center gap-8">
+    <section id="projects" className='flex flex-col gap-10 mb-20 mx-24'>
+      <h1 className='text-4xl text-left font-black p-2 border-2 border-b-black border-r-black border-l-white border-t-white max-w-fit'>Projects</h1>
+      <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            name={project.name}
-            description={project.description}
-            photo={project.photo}
-            demo={project.demo}
-            github={project.github}
-            stack={project.stack}
-          />
+            <ProjectCard
+              key={index}
+              name={project.name}
+              description={project.description}
+              photo={project.photo}
+              demo={project.demo}
+              github={project.github}
+              stack={project.stack}
+            />
+
         ))}
       </div>
 

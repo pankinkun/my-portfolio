@@ -6,6 +6,8 @@ import Project from './components/Project'
 import Experience from './components/Experience'
 import Sidebar from './components/Sidebar'
 import Social from './components/Social'
+import AboutMe from './components/AboutMe'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -14,9 +16,11 @@ function App() {
       <Social />
       <Sidebar />
       <Home />
+      <AboutMe />
       <Skill />
       <Project />
       <Experience />
+      <Footer />
     </div>
   )
 }
