@@ -5,7 +5,7 @@ const Skill = () => {
   const skills = [
     {
       type: 'Languages',
-      skills: ['Java', 'Python', 'C', 'C++', 'JavaScript', 'HTML', 'CSS', 'SQL', 'NoSQL', 'PHP', 'TypeScript', 'Bash']
+      skills: ["Java", 'JavaScript', 'Python', 'TypeScript', 'HTML', 'CSS', 'Git', 'SQL', 'MIPS (Assembly)']
     },
     {
       type: 'Libraries',
