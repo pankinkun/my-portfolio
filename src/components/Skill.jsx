@@ -23,7 +23,7 @@ const Skill = () => {
   ]
   return (
     <section id="skills" className='flex flex-col gap-10 mb-20 mx-24'>
-      <h1 className='text-4xl text-left p-2 border-2 border-b-black border-r-black border-l-white border-t-white max-w-fit font-black'>Skills</h1>
+      <h1 className='text-4xl text-left p-2 border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 max-w-fit font-black'>Skills</h1>
       <div className='flex flex-wrap gap-12 justify-center w-[100%]'>
         {skills.map((skill) => (
           <SkillCard  type={skill.type} skills={skill.skills} />

@@ -9,7 +9,7 @@ import aboutme from '.././assets/aboutme.png'
 
 const Sidebar = () => {
   return (
-    <div className='flex flex-col gap-6 fixed top-10 right-8 p-2 border-b-black border-l-black border-t-white border-r-white border-2'>
+    <div className='flex flex-col gap-6 fixed top-10 right-8 p-2 border-b-black border-l-black border-t-slate-100 border-r-slate-100 border-2'>
 
       <Link
         to='home'
