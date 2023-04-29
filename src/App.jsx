@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='p-10'>
+    <div className='lg:p-10 sm:p-4'>
       <Social />
       <Sidebar />
       <Home />
