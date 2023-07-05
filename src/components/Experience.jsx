@@ -2,6 +2,7 @@ import React from 'react'
 import forward from '.././assets/forward.png'
 import ExperienceCard from './ExperienceCard'
 import sce from '.././assets/sce.png'
+import { AnimatedTitle } from './AnimatedTitle'
 
 const Experience = () => {
   const experience = [
@@ -22,7 +23,7 @@ const Experience = () => {
   ]
   return (
     <section id="experience" className='flex flex-col gap-10 mb-10 mx-24'>
-      <h1 className='text-4xl text-left p-2 border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 max-w-fit font-black'>Experience</h1>
+      <AnimatedTitle>Experience</AnimatedTitle>
       <div className="flex flex-wrap justify-center gap-8">
         {experience.map((experience) => (
           <ExperienceCard company={experience.company} title={experience.title} website={experience.website} description={experience.description} photo={experience.photo} />

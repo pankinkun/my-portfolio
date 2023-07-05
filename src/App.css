@@ -2,3 +2,9 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
+
+section span.AnimatedTitle {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
+}

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Home from './components/Home'
-import Skill from './components/Skill'
-import Project from './components/Project'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Sidebar from './components/Sidebar'
 import Social from './components/Social'
@@ -17,8 +17,8 @@ function App() {
       <Sidebar />
       <Home />
       <AboutMe />
-      <Skill />
-      <Project />
+      <Skills />
+      <Projects />
       <Experience />
       <Footer />
     </div>

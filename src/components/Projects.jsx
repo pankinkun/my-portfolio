@@ -4,6 +4,7 @@ import PPP from '../assets/ppp.png'
 import memgen from '../assets/memgen.png'
 import sinkorswim from '../assets/sinkorswim.png'
 import discordbot from '../assets/discordbot.png'
+import { AnimatedTitle } from './AnimatedTitle.jsx'
 
 const Project = () => {
 
@@ -45,7 +46,7 @@ const Project = () => {
 
   return (
     <section id="projects" className='flex flex-col gap-10 mb-20 mx-24'>
-      <h1 className='text-4xl text-left font-black p-2 border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 max-w-fit'>Projects</h1>
+      <AnimatedTitle>Projects</AnimatedTitle>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
             <ProjectCard
