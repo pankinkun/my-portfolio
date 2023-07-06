@@ -61,7 +61,7 @@ const Sidebar = () => {
               ? { opacity: 1, y: 0 }
               : { opacity: 0, y: -50 }
           }
-          transition={{ duration: 0.5, delay: index * 0.1 }}
+          transition={{ duration: 0.5}}
         >
           <SidebarIcon key={index} to={item.to} icon={item.icon} />
         </motion.div>

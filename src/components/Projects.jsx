@@ -5,6 +5,7 @@ import memgen from '../assets/memgen.png'
 import sinkorswim from '../assets/sinkorswim.png'
 import discordbot from '../assets/discordbot.png'
 import { AnimatedTitle } from './AnimatedTitle.jsx'
+import Reveal from './Reveal.jsx'
 
 const Project = () => {
 
@@ -47,6 +48,7 @@ const Project = () => {
   return (
     <section id="projects" className='flex flex-col gap-10 mb-20 mx-24'>
       <AnimatedTitle>Projects</AnimatedTitle>
+      <Reveal>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
             <ProjectCard
@@ -58,10 +60,11 @@ const Project = () => {
               github={project.github}
               stack={project.stack}
             />
-
         ))}
-      </div>
 
+
+      </div>
+      </Reveal>
     </section>
   )
 }

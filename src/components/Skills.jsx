@@ -1,6 +1,7 @@
 import React from 'react'
 import SkillCard from './SkillCard'
 import { AnimatedTitle } from './AnimatedTitle'
+import Reveal from './Reveal'
 
 const Skill = () => {
   const skills = [
@@ -18,8 +19,8 @@ const Skill = () => {
     },
     {
       type: 'Databases',
-      skills: ["Supabase", 'Vercel',"PostgreSQL", "Prisma", "MongoDB", "MySQL"]
-    },    
+      skills: ["Supabase", 'Vercel', "PostgreSQL", "Prisma", "MongoDB", "MySQL"]
+    },
     {
       type: 'Others',
       skills: ['Agile / Scrum', 'GitHub', 'Vite', 'Docker']
@@ -30,7 +31,9 @@ const Skill = () => {
       <AnimatedTitle>Skills</AnimatedTitle>
       <div className='flex flex-wrap gap-12 justify-center w-[100%]'>
         {skills.map((skill) => (
-          <SkillCard  type={skill.type} skills={skill.skills} />
+          <Reveal>
+            <SkillCard type={skill.type} skills={skill.skills} />
+          </Reveal>
         ))}
       </div>
     </section>
