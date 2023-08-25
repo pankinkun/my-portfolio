@@ -1,10 +1,10 @@
 import React from 'react'
-import { AnimatedTitle } from './AnimatedTitle'
-import Reveal from './Reveal'
+import { AnimatedTitle } from '../utils/AnimatedTitle'
+import Reveal from '../utils/Reveal'
 
 const AboutMe = () => {
   return (
-    <section id="aboutme" className='flex flex-col gap-10 mb-20 mx-24'>
+    <section id="aboutme" className='flex flex-col gap-6 md:gap-10 md:mb-20 md:mx-24'>
       <AnimatedTitle>About Me</AnimatedTitle>
       <div className="flex flex-col items-center">
         <div className="text-left leading-relaxed max-w-[70%]">

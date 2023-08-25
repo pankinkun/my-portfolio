@@ -1,15 +1,13 @@
 import React from 'react'
-import Project from '.././assets/software.png'
-import Work from '.././assets/work.png'
-import Skills from '.././assets/skills.png'
-import CodingSkills from '.././assets/codingskills.png'
-import Home from '.././assets/home.png'
+import Project from '../.././assets/icons/software.png'
+import Work from '../.././assets/icons/work.png'
+import CodingSkills from '../.././assets/icons/codingskills.png'
+import Home from '../.././assets/icons/home.png'
 import { Link } from 'react-scroll'
-import aboutme from '.././assets/aboutme.png'
+import aboutme from '../.././assets/icons/aboutme.png'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import SidebarIcon from './SidebarIcon'
-
+import SidebarIcon from '../utils/SidebarIcon'
 
 const Sidebar = () => {
 
@@ -37,6 +35,7 @@ const Sidebar = () => {
   ]
 
   const [visibleItems, setVisibleItems] = useState([]);
+  const [hamburger, setHamburger] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -50,7 +49,7 @@ const Sidebar = () => {
   }, [visibleItems]);
 
   return (
-    <div className='flex flex-col gap-6 fixed top-10 right-8 p-2 border-b-black border-l-black border-t-slate-100 border-r-slate-100 border-2'>
+    <div className='flex flex-col gap-6 fixed top-0 right-0 md:right-8 md:top-8 p-2 border-b-black border-l-black border-t-slate-100 border-r-slate-100 md:border-2'>
 
       {links.map((item, index) => (
         <motion.div
@@ -61,7 +60,7 @@ const Sidebar = () => {
               ? { opacity: 1, y: 0 }
               : { opacity: 0, y: -50 }
           }
-          transition={{ duration: 0.5}}
+          transition={{ duration: 0.5 }}
         >
           <SidebarIcon key={index} to={item.to} icon={item.icon} />
         </motion.div>

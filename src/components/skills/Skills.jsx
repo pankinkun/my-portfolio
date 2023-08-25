@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillCard from './SkillCard'
-import { AnimatedTitle } from './AnimatedTitle'
-import Reveal from './Reveal'
+import { AnimatedTitle } from '../utils/AnimatedTitle.jsx'
+import Reveal from '../utils/Reveal'
 
 const Skill = () => {
   const skills = [
@@ -27,7 +27,7 @@ const Skill = () => {
     },
   ]
   return (
-    <section id="skills" className='flex flex-col gap-10 mb-20 mx-24'>
+    <section id="skills" className='flex flex-col gap-6 md:gap-10 md:mb-20 md:mx-24'>
       <AnimatedTitle>Skills</AnimatedTitle>
       <div className='flex flex-wrap gap-12 justify-center w-[100%]'>
         {skills.map((skill) => (

@@ -1,15 +1,14 @@
 import React from 'react'
 import ProjectCard from './ProjectCard.jsx'
-import PPP from '../assets/ppp.png'
-import memgen from '../assets/memgen.png'
-import sinkorswim from '../assets/sinkorswim.png'
-import discordbot from '../assets/discordbot.png'
-import { AnimatedTitle } from './AnimatedTitle.jsx'
-import Reveal from './Reveal.jsx'
+import PPP from '../../assets/projects/ppp.png'
+import memgen from '../../assets/projects/memgen.png'
+import sinkorswim from '../../assets/projects/sinkorswim.png'
+import discordbot from '../../assets/projects/discordbot.png'
+import { AnimatedTitle } from '../utils/AnimatedTitle.jsx'
+import Reveal from '../utils/Reveal'
 
 const Project = () => {
-
-  const projects = [
+ const projects = [
     {
       name: "MemGEN",
       description: "A personal-customized intelligent cover letter creator using vector database, large language models and embeddings",
@@ -42,15 +41,14 @@ const Project = () => {
       github: "https://github.com/triquenguyen/sink-or-swim",
       stack: "Next.js, Tailwind CSS, Framer Motion, TypeScript, Flask, TensorFlow"
     },
-
   ]
 
   return (
-    <section id="projects" className='flex flex-col gap-10 mb-20 mx-24'>
+    <section id="projects" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24'>
       <AnimatedTitle>Projects</AnimatedTitle>
       <Reveal>
-      <div className="flex flex-wrap justify-center gap-8">
-        {projects.map((project, index) => (
+        <div className="flex flex-wrap justify-center gap-8">
+          {projects.map((project, index) => (
             <ProjectCard
               key={index}
               name={project.name}
@@ -60,10 +58,8 @@ const Project = () => {
               github={project.github}
               stack={project.stack}
             />
-        ))}
-
-
-      </div>
+          ))}
+        </div>
       </Reveal>
     </section>
   )

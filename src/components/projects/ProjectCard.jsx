@@ -1,6 +1,6 @@
 import React from 'react'
-import GitHub from '.././assets/github.png'
-import Project from '.././assets/software.png'
+import GitHub from '../.././assets/icons/github.png'
+import Project from '../.././assets/icons/software.png'
 
 const ProjectCard = ({ name, description, photo, demo, github, stack }) => {
   return (

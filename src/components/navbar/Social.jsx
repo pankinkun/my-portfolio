@@ -1,7 +1,7 @@
 import React from 'react'
-import GitHub from '.././assets/github.png'
-import Gmail from '.././assets/gmail.png'
-import LinkedIn from '.././assets/linkedin.png'
+import GitHub from '../.././assets/icons/github.png'
+import Gmail from '../.././/assets/icons/gmail.png'
+import LinkedIn from '../.././/assets/icons/linkedin.png'
 import { motion } from 'framer-motion'
 import SocialIcon from './SocialIcon'
 import { useState, useEffect } from 'react'
@@ -37,7 +37,7 @@ const Social = () => {
   }, [visibleItems]);
 
   return (
-    <div className='flex flex-col gap-6 fixed bottom-10 p-2 border-t-black border-r-black border-l-slate-100 border-b-slate-100 border-2'>
+    <div className='flex flex-col gap-6 fixed left-0 bottom-0 md:left-8 md:bottom-8 p-2 border-t-black border-r-black border-l-slate-100 border-b-slate-100 lg:border-2'>
       {social.map((item, index) => (
         <motion.div
           key={index}

@@ -1,7 +1,4 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Social from './Social'
-import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect'
 
 const Home = () => {
@@ -11,15 +8,15 @@ const Home = () => {
         <h1 className="text-6xl">Hi, I'm <span className="font-black pb-4 pr-4 lg:border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 md:border-0 max-w-fit">Trique Nguyen</span></h1>
         <div className="text-xl max-w-3xl">
           <Typewriter
-          
-          options={{
-            strings: 'A thriving student with a passion for developing tools to help the world!',
-            autoStart: true,
-            delay: 50,
-          }}
-        />
+
+            options={{
+              strings: 'A thriving student with a passion for developing tools to help the world!',
+              autoStart: true,
+              delay: 50,
+            }}
+          />
         </div>
-        
+
       </div>
     </section>
 

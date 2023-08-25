@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '.././assets/software.png'
+import Project from '../.././assets/icons/software.png'
 
 const ExperienceCard = ({ company, title, website, description, photo }) => {
   return (
