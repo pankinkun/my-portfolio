@@ -4,6 +4,7 @@ import PPP from '../../assets/projects/ppp.png'
 import memgen from '../../assets/projects/memgen.png'
 import sinkorswim from '../../assets/projects/sinkorswim.png'
 import discordbot from '../../assets/projects/discordbot.png'
+import pixeo from '../../assets/projects/pixeo.png'
 import { AnimatedTitle } from '../utils/AnimatedTitle.jsx'
 import Reveal from '../utils/Reveal'
 
@@ -41,10 +42,18 @@ const Project = () => {
       github: "https://github.com/triquenguyen/sink-or-swim",
       stack: "Next.js, Tailwind CSS, Framer Motion, TypeScript, Flask, TensorFlow"
     },
+    {
+      name: "Pixeo",
+      description: "A social media platform designed exclusively for digital artists to showcase their incredible talent and connect with a vibrant community of art enthusiasts",
+      photo: pixeo,
+      demo: "https://sinkorswim.vercel.app/",
+      github: "https://github.com/triquenguyen/pixeo",
+      stack: "Next.js, Redux, MySQL, Tailwind CSS, NextAuth, Framer Motion"
+    }
   ]
 
   return (
-    <section id="projects" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24'>
+    <section id="projects" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24 mt-6 md:mt-0'>
       <AnimatedTitle>Projects</AnimatedTitle>
       <Reveal>
         <div className="flex flex-wrap justify-center gap-8">

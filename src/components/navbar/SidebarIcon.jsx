@@ -13,7 +13,7 @@ const SidebarIcon = ({ to, icon }) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         alt='SidebarIcon'
-        className='w-8 h-8' />
+        className='w-5 h-5 md:w-8 md:h-8' />
     </Link>
   )
 }

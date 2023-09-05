@@ -27,7 +27,7 @@ const Skill = () => {
     },
   ]
   return (
-    <section id="skills" className='flex flex-col gap-6 md:gap-10 md:mb-20 md:mx-24'>
+    <section id="skills" className='flex flex-col gap-6 md:gap-10 md:mb-20 md:mx-24 mt-6 md:mt-0'>
       <AnimatedTitle>Skills</AnimatedTitle>
       <div className='flex flex-wrap gap-12 justify-center w-[100%]'>
         {skills.map((skill) => (

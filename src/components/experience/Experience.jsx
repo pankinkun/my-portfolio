@@ -23,7 +23,7 @@ const Experience = () => {
     }
   ]
   return (
-    <section id="experience" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24'>
+    <section id="experience" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24 mt-6 md:mt-0'>
       <AnimatedTitle>Experience</AnimatedTitle>
       <Reveal>
         <div className="flex flex-wrap justify-center gap-8">

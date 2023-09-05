@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 import aboutme from '../.././assets/icons/aboutme.png'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import SidebarIcon from '../utils/SidebarIcon'
+import SidebarIcon from './SidebarIcon'
 
 const Sidebar = () => {
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
   }, [visibleItems]);
 
   return (
-    <div className='flex flex-col gap-6 fixed top-0 right-0 md:right-8 md:top-8 p-2 border-b-black border-l-black border-t-slate-100 border-r-slate-100 md:border-2'>
+    <div className='flex flex-col gap-4 md:gap-6 fixed top-0 right-0 md:right-8 md:top-8 p-2 border-b-black border-l-black border-t-slate-100 border-r-slate-100 md:border-2'>
 
       {links.map((item, index) => (
         <motion.div
