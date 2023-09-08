@@ -2,11 +2,19 @@ import React from 'react'
 import forward from '../.././assets/experience/forward.png'
 import ExperienceCard from './ExperienceCard'
 import sce from '../.././assets/experience/sce.png'
+import acmsjsu from '../.././assets/experience/acmsjsu.png'
 import { AnimatedTitle } from '../utils/AnimatedTitle'
 import Reveal from '../utils/Reveal'
 
 const Experience = () => {
   const experience = [
+    {
+      company: 'ACM at SJSU',
+      title: 'Development Team Lead',
+      website: 'https://www.acmsjsu.org/',
+      description: 'The largest Computer Science organization in SJSU!',
+      photo: acmsjsu
+    },
     {
       company: 'Forward (SpartUp Incubator Member)',
       title: 'Founding Software Developer',

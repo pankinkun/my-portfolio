@@ -4,7 +4,7 @@ import PPP from '../../assets/projects/ppp.png'
 import memgen from '../../assets/projects/memgen.png'
 import sinkorswim from '../../assets/projects/sinkorswim.png'
 import discordbot from '../../assets/projects/discordbot.png'
-import pixeo from '../../assets/projects/pixeo.png'
+import pixeo from '../../assets/projects/Pixeo.png'
 import { AnimatedTitle } from '../utils/AnimatedTitle.jsx'
 import Reveal from '../utils/Reveal'
 
