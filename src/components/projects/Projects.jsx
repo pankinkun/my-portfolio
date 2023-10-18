@@ -9,7 +9,7 @@ import { AnimatedTitle } from '../utils/AnimatedTitle.jsx'
 import Reveal from '../utils/Reveal'
 
 const Project = () => {
- const projects = [
+  const projects = [
     {
       name: "MemGEN",
       description: "A personal-customized intelligent cover letter creator using vector database, large language models and embeddings",
@@ -17,6 +17,14 @@ const Project = () => {
       demo: "https://memgen.projects.art3m1s.me/",
       github: "https://github.com/triquenguyen/MemGen",
       stack: "Next.js, Auth0, Express, Firebase, Google Cloud, Milvus, Zilliz, OpenAI, Cohere"
+    },
+    {
+      name: "Sink Or Swim",
+      description: "A web app applied computer vision technology assists rice farmers in detecting diseases in their paddy crops",
+      photo: sinkorswim,
+      demo: "https://sinkorswim.vercel.app/",
+      github: "https://github.com/triquenguyen/sink-or-swim",
+      stack: "Next.js, Tailwind CSS, Framer Motion, TypeScript, Flask, TensorFlow"
     },
     {
       name: "Paddy Plant Prognosis",
@@ -35,14 +43,6 @@ const Project = () => {
       stack: "Python, GraphQL, Discord API"
     },
     {
-      name: "Sink Or Swim",
-      description: "A web app applied computer vision technology assists rice farmers in detecting diseases in their paddy crops",
-      photo: sinkorswim,
-      demo: "https://sinkorswim.vercel.app/",
-      github: "https://github.com/triquenguyen/sink-or-swim",
-      stack: "Next.js, Tailwind CSS, Framer Motion, TypeScript, Flask, TensorFlow"
-    },
-    {
       name: "Pixeo",
       description: "A social media platform designed exclusively for digital artists to showcase their incredible talent and connect with a vibrant community of art enthusiasts",
       photo: pixeo,
@@ -53,11 +53,11 @@ const Project = () => {
   ]
 
   return (
-    <section id="projects" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24 mt-6 md:mt-0'>
+    <section id="projects" className='flex flex-col gap-6 md:gap-16 md:mb-32 mx-16 md:mx-24 mt-6 md:mt-0'>
       <AnimatedTitle>Projects</AnimatedTitle>
-      <Reveal>
-        <div className="flex flex-wrap justify-center gap-8">
-          {projects.map((project, index) => (
+      <div className="flex flex-wrap justify-center gap-12">
+        {projects.map((project, index) => (
+          <Reveal>
             <ProjectCard
               key={index}
               name={project.name}
@@ -67,9 +67,10 @@ const Project = () => {
               github={project.github}
               stack={project.stack}
             />
-          ))}
-        </div>
-      </Reveal>
+          </Reveal>
+
+        ))}
+      </div>
     </section>
   )
 }

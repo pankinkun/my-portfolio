@@ -9,7 +9,7 @@ import Reveal from '../utils/Reveal'
 const Experience = () => {
   const experience = [
     {
-      company: 'ACM at SJSU',
+      company: 'Association for Computing Machinery',
       title: 'Development Team Lead',
       website: 'https://www.acmsjsu.org/',
       description: 'The largest Computer Science organization in SJSU!',
@@ -31,22 +31,23 @@ const Experience = () => {
     }
   ]
   return (
-    <section id="experience" className='flex flex-col gap-6 md:gap-10 mx-16 md:mb-20 md:mx-24 mt-6 md:mt-0'>
+    <section id="experience" className='flex flex-col gap-6 md:gap-16 md:mb-32 mx-16 md:mx-24 mt-6 md:mt-0'>
       <AnimatedTitle>Experience</AnimatedTitle>
-      <Reveal>
-        <div className="flex flex-wrap justify-center gap-8">
-          {experience.map((experience, index) => (
+      <div className="flex flex-wrap justify-center gap-10">
+        {experience.map((experience, index) => (
+          <Reveal>
             <ExperienceCard
               key={index}
               company={experience.company}
               title={experience.title}
               website={experience.website}
               description={experience.description}
-              photo={experience.photo} 
+              photo={experience.photo}
             />
-          ))}
-        </div>
-      </Reveal>
+          </Reveal>
+
+        ))}
+      </div>
     </section>
   )
 }

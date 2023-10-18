@@ -4,7 +4,7 @@ import Reveal from '../utils/Reveal'
 
 const AboutMe = () => {
   return (
-    <section id="aboutme" className='flex flex-col gap-6 md:gap-10 md:mb-20 md:mx-24'>
+    <section id="aboutme" className='flex flex-col gap-6 md:gap-16 md:mb-32 md:mx-24'>
       <AnimatedTitle>About Me</AnimatedTitle>
       <div className="flex flex-col items-center">
         <div className="text-left leading-relaxed max-w-[70%]">
