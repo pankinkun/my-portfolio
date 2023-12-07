@@ -12,15 +12,18 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='lg:p-10 bg-slate-100'>
-      <Social />
-      <Sidebar />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Footer />
+    <div className='bg-slate-100 flex items-center justify-center'>
+      <div className="max-w-[1920px]">
+        <Social />
+        <Sidebar />
+        <Home />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Footer />
+      </div>
+
     </div>
   )
 }

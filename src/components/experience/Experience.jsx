@@ -16,7 +16,7 @@ const Experience = () => {
       photo: acmsjsu
     },
     {
-      company: 'Forward (SpartUp Incubator Member)',
+      company: 'Forward AI (SpartUp Incubator Member)',
       title: 'Founding Software Developer',
       website: 'https://useforward.app/',
       description: 'Your AI personal assistant in the job hunt and skill-building!',
