@@ -7,7 +7,7 @@ export function AnimatedTitle({ children }) {
 
   return (
     <section ref={ref} 
-      className='text-4xl text-center min-w-full md:text-left md:min-w-fit p-2 md:border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 max-w-fit font-black'>
+      className='text-2xl text-center min-w-full md:text-left md:min-w-fit p-2 md:border-2 border-b-black border-r-black border-l-slate-100 border-t-slate-100 max-w-fit font-black'>
       <span
         style={{
           transform: isInView ? "none" : "translateX(-200px)",

@@ -10,7 +10,7 @@ const Home = () => {
           <Typewriter
 
             options={{
-              strings: 'Full Stack Developer',
+              strings: 'Simply a Full Stack Engineer',
               autoStart: true,
               delay: 50,
             }}
