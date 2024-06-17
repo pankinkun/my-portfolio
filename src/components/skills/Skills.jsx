@@ -7,11 +7,11 @@ const Skill = () => {
   const skills = [
     {
       type: 'Languages',
-      skills: ["Java", 'JavaScript', 'Python', "C / C++", 'TypeScript', 'HTML', 'CSS', 'Git', 'SQL', 'Dart', 'Bash', 'MIPS (Assembly)']
+      skills: ["Java", 'JavaScript/TypeScript', 'Python', "C / C++", 'HTML', 'CSS']
     },
     {
-      type: 'Web Frameworks',
-      skills: ["React", 'Vue', "Tailwind CSS", "Framer Motion", "Redux", "NextAuth / Auth.js", "Next.js", "Flutter", "Flask", "Express.js", "Node.js"]
+      type: 'Frameworks',
+      skills: ["React", 'Vue', "Tailwind CSS", "Framer Motion", "Redux", "NextAuth / Auth.js", "Next.js", "Flask", "Express.js", "Node.js"]
     },
     // {
     //   type: '',
@@ -19,11 +19,11 @@ const Skill = () => {
     // },
     {
       type: 'Databases & Cloud',
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Vercel", "Firebase", "Supabase", "PlanetScale", "Docker"]
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "GCP", "AWS"]
     },
     {
       type: 'Others',
-      skills: ['Agile / Scrum', "DevOps", "REST API", "GraphQL", "GitHub", "Figma", "Postman", "Android Studio", "Chrome API", "Discord API"]
+      skills: ['Agile / Scrum', "DevOps", "REST API", "GraphQL", "gRPC", "Docker", "Kubernetes"]
     },
   ]
   return (
