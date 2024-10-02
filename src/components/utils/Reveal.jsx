@@ -5,13 +5,17 @@ export default function Reveal({ children, width = "fit-content" }) {
   const ref = useRef(null);
   const mainControls = useAnimation();
   const slideControls = useAnimation();
-  const inView = useInView(ref, { once: true });
+  const inView = useInView(ref, { once: false });
   const isPresent = useIsPresent();
 
   useEffect(() => {
     if (inView) {
       mainControls.start('visible');
       slideControls.start('visible');
+    } else 
+    {
+      mainControls.start('hidden');
+      slideControls.start('hidden');
     }
   }, [inView]);
 

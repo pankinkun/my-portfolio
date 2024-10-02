@@ -5,7 +5,7 @@ const ExperienceCard = ({ company, title, website, description, photo }) => {
   return (
     <div>
       <div className='border-2 md:w-[36rem] sm:w-[20rem] border-black flex gap-4 flex-col'>
-        <img src={photo} />
+        <img src={photo} height={300}/>
         <h1 className="font-black text-xl">{company}</h1>
         <h1 className="font-md text-lg border-2 border-black border-x-transparent p-4 font-semibold">{title}</h1>
         <h1 className="font-md text-lg px-2 ">{description}</h1>
