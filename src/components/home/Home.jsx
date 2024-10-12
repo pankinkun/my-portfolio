@@ -10,7 +10,7 @@ const Home = () => {
           <Typewriter
 
             options={{
-              strings: 'A Research Assistant on <u><a href="https://discdd.net/" target="_blank" rel="noreferrer">DiscDD.net</a></u> @ SJSU CS Systems Group',
+              strings: 'A Research Assistant of <u><a href="https://discdd.net/" target="_blank" rel="noreferrer">DiscDD.net</a></u> @ SJSU CS Systems Group',
               autoStart: true,
               delay: 50,
             }}

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className='bg-slate-100 flex items-center justify-center'>
-      <div className="max-w-[1480px]">
+      <div className="max-w-[1280px]">
         <Social />
         <Sidebar />
         <Home />
